@@ -14,6 +14,10 @@
 		7FDC84771F5C334400A1222D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC84751F5C334400A1222D /* Main.storyboard */; };
 		7FDC84791F5C334400A1222D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC84781F5C334400A1222D /* Assets.xcassets */; };
 		7FDC847C1F5C334400A1222D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC847A1F5C334400A1222D /* LaunchScreen.storyboard */; };
+		7FDC848B1F5C367000A1222D /* BBIrregularImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC84851F5C367000A1222D /* BBIrregularImageButton.m */; };
+		7FDC848C1F5C367000A1222D /* BBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC84871F5C367000A1222D /* BBShapedButton.m */; };
+		7FDC848D1F5C367000A1222D /* button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC84881F5C367000A1222D /* button-normal.png */; };
+		7FDC848E1F5C367000A1222D /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC848A1F5C367000A1222D /* UIImage+ColorAtPixel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		7FDC84781F5C334400A1222D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FDC847B1F5C334400A1222D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FDC847D1F5C334400A1222D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FDC84841F5C367000A1222D /* BBIrregularImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBIrregularImageButton.h; sourceTree = "<group>"; };
+		7FDC84851F5C367000A1222D /* BBIrregularImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBIrregularImageButton.m; sourceTree = "<group>"; };
+		7FDC84861F5C367000A1222D /* BBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBShapedButton.h; sourceTree = "<group>"; };
+		7FDC84871F5C367000A1222D /* BBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBShapedButton.m; sourceTree = "<group>"; };
+		7FDC84881F5C367000A1222D /* button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-normal.png"; sourceTree = "<group>"; };
+		7FDC84891F5C367000A1222D /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		7FDC848A1F5C367000A1222D /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 		7FDC84681F5C334400A1222D /* BBShapedButton1 */ = {
 			isa = PBXGroup;
 			children = (
+				7FDC84831F5C366F00A1222D /* ShapedButtonClass */,
 				7FDC846C1F5C334400A1222D /* AppDelegate.h */,
 				7FDC846D1F5C334400A1222D /* AppDelegate.m */,
 				7FDC846F1F5C334400A1222D /* FirstViewController.h */,
@@ -82,6 +94,20 @@
 				7FDC846A1F5C334400A1222D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FDC84831F5C366F00A1222D /* ShapedButtonClass */ = {
+			isa = PBXGroup;
+			children = (
+				7FDC84841F5C367000A1222D /* BBIrregularImageButton.h */,
+				7FDC84851F5C367000A1222D /* BBIrregularImageButton.m */,
+				7FDC84861F5C367000A1222D /* BBShapedButton.h */,
+				7FDC84871F5C367000A1222D /* BBShapedButton.m */,
+				7FDC84881F5C367000A1222D /* button-normal.png */,
+				7FDC84891F5C367000A1222D /* UIImage+ColorAtPixel.h */,
+				7FDC848A1F5C367000A1222D /* UIImage+ColorAtPixel.m */,
+			);
+			path = ShapedButtonClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +170,7 @@
 			files = (
 				7FDC847C1F5C334400A1222D /* LaunchScreen.storyboard in Resources */,
 				7FDC84791F5C334400A1222D /* Assets.xcassets in Resources */,
+				7FDC848D1F5C367000A1222D /* button-normal.png in Resources */,
 				7FDC84771F5C334400A1222D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +184,10 @@
 			files = (
 				7FDC84741F5C334400A1222D /* SecondViewController.m in Sources */,
 				7FDC846E1F5C334400A1222D /* AppDelegate.m in Sources */,
+				7FDC848B1F5C367000A1222D /* BBIrregularImageButton.m in Sources */,
 				7FDC84711F5C334400A1222D /* FirstViewController.m in Sources */,
+				7FDC848C1F5C367000A1222D /* BBShapedButton.m in Sources */,
+				7FDC848E1F5C367000A1222D /* UIImage+ColorAtPixel.m in Sources */,
 				7FDC846B1F5C334400A1222D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +345,7 @@
 				7FDC84821F5C334400A1222D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
