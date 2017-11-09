@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"=====%@",@"1111");
+    NSLog(@"=====%@",@"1.1.1.11");
     
     
     //XX按钮
