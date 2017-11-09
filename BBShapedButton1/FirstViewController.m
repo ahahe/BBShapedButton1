@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"=====%@",@"1111");
+    
     
     //XX按钮
     BBIrregularImageButton *imageBtn = [[BBIrregularImageButton alloc] initWithFrame:CGRectMake(50, 0, 100, 100)];
